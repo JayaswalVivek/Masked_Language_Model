@@ -7,7 +7,7 @@ This is a modification of the code published by HuggingFace (https://huggingface
 
 Two implementaions of MLMs are provided -- one for Esperanato and another for Hindi. For Hindi, the data set was downloaded from https://www.kaggle.com/disisbig/hindi-wikipedia-articles-172k and the individual files were concatenated to create a single input file. For Esperanto, the link for downloading the data set is provided in the Jupyter notebook itself. 
 
-The Esperanto and Hindi MLMs differ in the underlying transformer architecture with the former being based on RoBERTa (Liu et al., 2019) and the latter on BERT (Devlin et al., 2018). The use of two different architectures is aimed at improving an understanding of the internal working of the tokenizers. 
+The Esperanto and Hindi MLMs differ in the underlying transformer architecture with the former being based on RoBERTa (Liu et al., 2019) and the latter on BERT (Devlin et al., 2018). The use of two different architectures is aimed at improving an understanding of the internal workings of the tokenizers. 
 
 It should be noted that the MLMs are under-trained because the code was simplified for execution on Google Colab (free version). Consequently, the code should only be used to understand the key concepts required to develop a deep-learning based language model from scratch and additional training on a larger data set (over multiple epochs) will be required to obtain a production-ready pretrained model.
 
