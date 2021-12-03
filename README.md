@@ -5,7 +5,11 @@ This is a modification of the code published by HuggingFace (https://huggingface
 2. HuggingFace Tokenizers version 0.10.0
 3. HuggingFace Datasets version 1.16.1
 
-Two impelementaions of MLMs are provided -- one for Esperanato and another for Hindi. For Hindi, the data set was downloaded from https://www.kaggle.com/disisbig/hindi-wikipedia-articles-172k and the individual files were concatenated to create a single input file. For Esperanto, the link for downloading the data set is provided in the Jupyter notebook itself. The base MLMs for Esperanto and Hindi are RoBERTa (Liu et al., 2019) and BERT (Devlin et al., 2018), respectively. This was done only to demonstrate the difference in the creation of the two types of pretrained MLMs. Finally, the models are under-trained because the code was run using the free version of Google Colab. Consequently, the code should only be used to develop an understanding of the key steps in the development of a deep-learning based language model and additional training on a larger data set (over multiple epochs) will be required to obtain a production-ready pretrained model.
+Two implementaions of MLMs are provided -- one for Esperanato and another for Hindi. For Hindi, the data set was downloaded from https://www.kaggle.com/disisbig/hindi-wikipedia-articles-172k and the individual files were concatenated to create a single input file. For Esperanto, the link for downloading the data set is provided in the Jupyter notebook itself. 
+
+The Esperanto and Hindi MLMs differ in the underlying transformer architecture with the former being based on RoBERTa (Liu et al., 2019) and the latter on BERT (Devlin et al., 2018). The use of two different architectures is aimed at improving an understanding of the internal working of the tokenizers. 
+
+It should be noted that the MLMs are under-trained because the code was simplified for execution on Google Colab (free version). Consequently, the code should only be used to understand the key concepts required to develop a deep-learning based language model from scratch and additional training on a larger data set (over multiple epochs) will be required to obtain a production-ready pretrained model.
 
 *References*
 1. Devlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. "Bert: Pre-training of deep bidirectional transformers for language understanding." arXiv preprint arXiv:1810.04805 (2018).
